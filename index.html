@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Tic Tac Toe Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div id="scoreboard">
+        <!-- Make the radios radio pairs between P1 and P2 so cannot have both X or O? -->
+        <div class="playerdiv">
+          
+            <input type="text" id="p1name" class="playername" name="player1name" placeholder="Name?">
+          
+            <div>
+             <input type="radio" class="radiox" name="xradio" id="p1x" value="x" checked>
+             <label for="p1x">I will be X</label>
+            </div>
+            <div>
+             <input type="radio" class="radioo" name='oradio' id="p1o" value="o">
+             <label for="p1o">I will be O</label>
+            </div>
+            <div>
+             <input type="radio" name="whofirst" class="whofirst" value="me" id="p1first" checked>
+             <label for="p1first">I will go first</label>
+            </div>
+          
+        </div>
+    <div class="center">
+        <div id="startbuttondiv"><button id="newgame">Start Game</button> </div>
+
+        <div class="resultsdiv">
+            <div id="p1results">Player 1 has 0 wins!</div>
+            <div id="p2results">Player 2 has 0 wins!</div>
+        </div>
+    </div>
+        <div class="playerdiv">
+
+            <input type="text" id="p2name" class="playername"  name="player2name" placeholder="Name?">
+            <div>
+            <input type="radio" class="radiox" name="xradio" id="p2x" value="x">
+            <label for="p2x">I will be X</label>
+            </div>
+<div>
+            <input type="radio" class="radioo" name='oradio' id="p2o" value="o" checked>
+            <label for="p2o">I will be O</label>
+</div>
+<div>
+            <input type="radio" name="whofirst" class="whofirst" value="me" id="p2first">
+            <label for="p2first">I will go first</label>
+</div>
+
+        </div>
+    </div>
+    <div id="gameboard">
+        <div id="gamecontainer">
+            <div class="gamesquare" id="0">0</div>
+            <div class="gamesquare" id="1">1</div>
+            <div class="gamesquare" id="2">2</div>
+            <div class="gamesquare" id="3">3</div>
+            <div class="gamesquare" id="4">4</div>
+            <div class="gamesquare" id="5">5</div>
+            <div class="gamesquare" id="6">6</div>
+            <div class="gamesquare" id="7">7</div>
+            <div class="gamesquare" id="8">8</div>
+        </div>
+    </div>
+</body>
+</html>
